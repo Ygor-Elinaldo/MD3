@@ -23,6 +23,8 @@ class HomeFragment : Fragment() {
     ): View {
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
 
+        _binding!!.recyclerViewRecents.adapter = AdapterTest()
+
         return binding.root
     }
 

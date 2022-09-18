@@ -1,13 +1,15 @@
 package com.eyo.application
 
+import android.app.Activity
 import android.os.Bundle
-import com.google.android.material.bottomnavigation.BottomNavigationView
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
-import androidx.navigation.ui.AppBarConfiguration
-import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.eyo.application.databinding.ActivityMainBinding
+import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.google.android.material.color.DynamicColors
+import com.google.android.material.color.DynamicColors.Precondition
 
 class MainActivity : AppCompatActivity() {
 
@@ -23,5 +25,17 @@ class MainActivity : AppCompatActivity() {
 
         val navController = findNavController(R.id.nav_host_fragment_activity_main)
         navView.setupWithNavController(navController)
+    }
+
+    public fun onClickQR(v: View) {
+        //TODO
+    }
+
+    public fun onClickCamera(v: View) {
+        //TODO
+    }
+
+    public fun onConnect(v: View) {
+        //TODO
     }
 }
